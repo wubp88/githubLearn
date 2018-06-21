@@ -1,0 +1,28 @@
+---
+title: "饼图"
+output: html_notebook
+---
+
+
+```{r}
+df <- data.frame(
+  group = c("Male", "Female", "Child"),
+  value = c(25, 25, 50)
+  )
+head(df)
+```
+
+
+
+```{r}
+library(ggplot2)
+# Barplot
+bp<- ggplot(df, aes(x="", y=value, fill=group))+
+geom_bar(width = 1, stat = "identity")
+bp
+```
+```{r}
+pie <- bp + coord_polar("y", start=0)
+pie
+```
+
