@@ -1,5 +1,8 @@
 # githubLearn
 
+## git教程
+https://github.com/xirong/my-git/blob/master/useful-git-command.md
+
  ## 本地代码同步到远程git仓库
  
 + 1 设置git账号
